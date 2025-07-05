@@ -13,5 +13,5 @@ body {
 @theme {
   --shadow-custom-hue: 0 0 16px 4px; 
   --shadow-custom-hue1: 0 0 20px 4px;
-  
+  --custom-clip-path: circle(8px at 88% 9%);
 }

@@ -2,7 +2,7 @@ import x from './assets/img-3.jpg'
 import y from './assets/img-4.jpg'
 import z from './assets/img-5.jpg'
 import a from './assets/img-7.jpg'
-import { AlignRight } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Github } from 'lucide-react';
 import { Linkedin } from 'lucide-react';
 import { Instagram } from 'lucide-react';
@@ -27,12 +27,13 @@ function App() {
               <span className='card__profession block text-sm'>DEV</span>
             </div>
 
-            <div className='card__clip absolute top-[1rem] right-[1rem] bg-amber-400 shadow-custom-hue shadow-[#b28c00] 
-            w-[2rem] h-[2rem] rounded-[50%] grid items-center justify-center cursor-pointer z-5 transition-transform duration-300'>
-              <AlignRight className='h-5 text-black'/>
+            <div className='card__clip absolute top-[1.5rem] right-[1rem] bg-amber-400 shadow-custom-hue shadow-[#b28c00] 
+            w-[2rem] h-[2rem] rounded-[50%] grid items-center justify-center cursor-pointer z-5 transition-transform duration-300
+            group-hover:-rotate-180 '>
+              <Menu className='h-5 text-black'/>
             </div>
 
-            <div className='info absolute top-0 left-0 w-[100%] h-[100%] bg-neutral-400/20 backdrop-blur-[2px] pt-12 px-6 pb-6'>
+            <div className='info group-hover:[clip-path:circle(100%)] [clip-path:circle(8px_at_88%_9%)] absolute top-0 left-0 w-[100%] h-[100%] bg-neutral-400/20 backdrop-blur-[2px] pt-12 px-6 pb-6 transition-all duration-500 ease-in-out'>
               <div className="info_data">
                 <h2 className='info_name font-extrabold text-2xl mb-4'>Modther Abdalhag</h2>
                 <p className='info_description text-sm mb-4'>
@@ -68,7 +69,7 @@ function App() {
             </div>
 
             <div className='card__clip'>
-              <AlignRight/>
+              <Menu/>
             </div>
           </article>
 
